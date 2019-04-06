@@ -1,0 +1,44 @@
+.Header {
+
+	width: 90%;
+	font-size: 1.8rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: $shadow;
+	border-radius: 4px;
+	margin-top: .5rem;
+
+	&-logo {
+
+		padding: .5rem;
+		display: flex;
+		width: 30%;
+	}
+
+	&-welcome {
+
+		padding: .5rem;
+		display: flex;
+	}
+
+	& img {
+		
+		height: 50px;
+		width: 50px;
+	}
+
+	& a {
+
+		border-radius: 100%;
+		height: 50px;
+		width: 50px;
+	}
+
+
+	& a:hover {
+
+		box-shadow: $shadow;
+	}
+}

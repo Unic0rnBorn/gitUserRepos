@@ -1,0 +1,85 @@
+.Sidebar {
+
+  width: 100%;
+  min-width: 17rem;
+  min-height: 300px;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 5px 15px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &-label{
+
+    font-size: 1rem;
+  }
+
+  &-inputBlock{
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.3)
+  }
+
+  &-example{
+
+    opacity: 0.6;
+    margin-top: 0.5rem;
+  }
+
+  &-inputDefinition{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-input{
+
+    line-height: 1.3rem;
+    padding: 0 5px;
+
+  }
+
+  &-addButton{
+    
+    padding: .5rem;
+    border-radius: 4px;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    &:hover{
+
+      box-shadow: $shadow
+    }
+  }
+
+  &-codeList{
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .5rem 0 1rem 0;
+  }
+
+  &-error{
+
+    color: red
+  }
+
+
+
+  //mobile first
+  @media( min-width: $large-device){
+  
+    width: 30%;
+  }
+}
