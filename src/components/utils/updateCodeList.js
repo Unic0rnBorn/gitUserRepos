@@ -1,6 +1,6 @@
 import codes from '../globals'
 
-const token = 'f69c2c8765b7fbbcd1383591208f5a8108842ad7'
+const token = ''
 
 /** 
  * @function updateCodeList 
@@ -104,12 +104,18 @@ const gitRequest = async ( user, dataUpdate ) => {
 
 	try{
 
-		const response = await fetch(url,{
-			method: 'GET',
-			headers: {
-				'Authorization': `token ${token}`
+		let auth = null
+		if( token ){
+
+			auth = {
+				method: 'GET',
+				headers: {
+					'Authorization': `token ${token}`
+				}
 			}
-		});
+		}
+
+		const response = await fetch(url, auth);
 
 		/**
 		 * error handling
