@@ -1,5 +1,6 @@
 import codes from '../globals'
 
+// put here your token
 const token = ''
 
 /** 
@@ -104,6 +105,11 @@ const gitRequest = async ( user, dataUpdate ) => {
 
 	try{
 
+		/**
+		 * if there is no token
+		 * just shoot standar request
+		 * with standart limits
+		 */
 		let auth = null
 		if( token ){
 
