@@ -1,4 +1,3 @@
-
 /**
  * @function nthIndex
  * useful tool from StackOverflow

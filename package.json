@@ -14,7 +14,6 @@
   "devDependencies": {
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
-    "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
     "npm-zepto": "^1.1.7",
     "sass-loader": "^7.1.0",
